@@ -8,9 +8,8 @@ body {
   width: 100%;
   height: 100%;
   margin: 0;
-  padding: 250px 5% 0 5%;
-  opacity: 0;
-  transition: opacity 500ms ease-out;
+  padding: 150px 5% 0 5%;
+  overflow: hidden;
 }
 
 h1 {
@@ -119,9 +118,32 @@ input[type="range"]:focus + .rangeslider .rangeslider__handle {
   box-shadow: 0 0 8px rgba(255, 0, 255, 0.9);
 }
 
-#chart-container {
-  width: 100%;
-  height: 50%;
-  position: relative;
-  margin: 6rem auto 0 auto;
+#passwordWall {
+    position: absolute;
+    width: 90%;
+    top: 50px;
+    left: 5%;
+    background: linear-gradient(to right, #cb356b, #bd3f32);
+    z-index: 1;
+    transition: all 1000ms ease-in;
+}
+
+#passwordWall input{
+  background-color: #fafafa;
+  border: 1px solid #939393;
+  margin: 60px auto 60px;
+  width: 60%;
+  max-width: 400px;
+  padding: 5px 15px;
+  font-size: 2em;
+  display: block;
+  border-radius: 4px;
+  outline: 0;
+	transition: .2s ease-out;
+  box-shadow: inset 0 1px 2px rgba(0,0,0,.39);
+}
+
+#passwordWall input:focus {
+  background-color: #fcfcfc;
+	box-shadow:  inset 0 1px 2px rgba(0,0,0,.39), -1px 2px 8px -2px rgba(0,0,0,.5);
 }
