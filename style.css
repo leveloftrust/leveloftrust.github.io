@@ -10,7 +10,7 @@ body {
   margin: 0;
   padding: 250px 5% 0 5%;
   opacity: 0;
-  transition: opacity 100ms ease-out;
+  transition: opacity 500ms ease-out;
 }
 
 h1 {
