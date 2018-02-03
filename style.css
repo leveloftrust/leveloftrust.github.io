@@ -9,6 +9,8 @@ body {
   height: 100%;
   margin: 0;
   padding: 250px 5% 0 5%;
+  opacity: 0;
+  transition: opacity 100ms ease-out;
 }
 
 h1 {

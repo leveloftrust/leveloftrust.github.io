@@ -198,7 +198,8 @@ $element
   });
 
 $.get('https://taptap.kz/secretforalice/current.php', function(resp) {
-  $element.val(resp).change()
+  $element.val(resp).change();
+  $('body').css('opacity', '1');
 })
 
 function updateHandle(el, val) {
